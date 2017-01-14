@@ -7,13 +7,13 @@
   <remote  name="github"
            fetch="https://github.com/" />
   <remote name="SimpleAosp"
-            fetch="https://github.com/SAOSP-N/" /> 
+            fetch="https://github.com/SAOSP-Legacy/" /> 
   <default revision="refs/tags/android-7.1.1_r13"
            remote="aosp"
            sync-j="4"
            sync-c="true"/>
 
-  <project path="build" name="platform_build" groups="pdk" remote="SimpleAosp" revision="N1" >
+  <project path="build" name="platform_build" groups="pdk" remote="SAOSP-Legacy" revision="N1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -42,6 +42,9 @@
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device" /> 
+  
+  <!--Device Repos --> 
+
   <project path="device/htc/flounder" name="platform_device_htc_flounder" groups="device,flounder,broadcom_pdk" remote="SimpleAosp" revision="N1" />
   <project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder,broadcom_pdk" clone-depth="1" />
   <project path="device/huawei/angler" name="platform_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="SimpleAosp" revision="N1" />
@@ -50,9 +53,16 @@
   <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" clone-depth="1" />
   <project path="device/moto/shamu" name="platform_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="SimpleAosp" revision="N1" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
-  <project path="device/lge/mako" name="platform_device_lge_mako" groups="device,mako" remote="SimpleAosp" revision="N1" />
-  <project path="device/lge/mako-kernel" name="platform_mako_kernel" groups="device,mako" remote="SimpleAosp" revision="N1" />
+  <project path="device/lge/mako" name="platform_device_lge_mako" groups="device,mako" remote="SAOSP-Legacy" revision="N1" />
+  <project path="device/lge/mako-kernel" name="platform_mako_kernel" groups="device,mako" remote="SAOSP-Legacy" revision="N1" />
+  <project path="device/lge/hammerhead" name="platform_device_lge_hammerhead" remote="SAOSP-Legacy" revision="N1" />
+  <project path="device/asus/flo" name="platform_device_asus_flo" remote="SAOSP-Legacy" revision="N1" />
+  <project path="kernel/lge/hammerhead" name="platform_kernel_lge_hammerhead" remote="SAOSP-Legacy" revision="N1" />
+  <project path="kernel/google/msm" name="platform_kernel_google_msm" remote="SAOSP-Legacy" revision="N1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
+
+  <!--End Device Repos -->
+  
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault" />
@@ -302,7 +312,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="SimpleAosp" revision="N1" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="SAOSP-Legacy" revision="N1" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="SimpleAosp" revision="N1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -338,22 +348,15 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
-  <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
-  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
-  <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
-  <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
   <project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="qcom_msm8996" />
   <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
@@ -506,13 +509,26 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  
+  <!-- Vendors -->
   <project path="vendor/simpleaosp" name="platform_vendor_simpleaosp" remote="SimpleAosp" revision="N1"/>
   <project path="vendor/prebuilt" name="platform_vendor_prebuilt" remote="SimpleAosp" revision="N1"/>
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="SimpleAosp" revision="N1" />
-  <project path="vendor/lge" name="proprietary_vendor_lge" remote="SimpleAosp" revision="N1" />
-  <project path="vendor" name="platform_vendor" remote="SimpleAosp" revision="N1" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="SAOSP-Legacy" revision="N1" />
+  <project path="vendor/asus" name="platform_vendor_asus" remote="SAOSP-Legacy" revision="N1" />
+  <project path="vendor" name="platform_vendor" remote="SAOSP-Legacy" revision="N1" />
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="SimpleAosp" revision="N1" />
   <project path="vendor/htc" name="platform_vendor_htc" remote="SimpleAosp" revision="N1" />
+
+  <!-- Custom Repos -->
+<project path="hardware/qcom/media" name="DirtyUnicorns/android_hardware_qcom_media" remote="github" revision="n7x" />  
+<project path="hardware/qcom/audio" name="DirtyUnicorns/android_hardware_qcom_audio" remote="github" revision="n7x" />
+<project path="hardware/qcom/display" name="DirtyUnicorns/android_hardware_qcom_display" remote="github" revision="n7x" />
+<project path="hardware/qcom/gps" name="DirtyUnicorns/android_hardware_qcom_gps" remote="github" revision="n7x" />
+<project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" remote="aosp" />
+<project path="hardware/qcom/msm8x74" name="android_hardware_qcom_msm8x74" remote="SimpleAosp" revision="n2" />
+<project path="hardware/qcom/keymaster" name="DirtyUnicorns/android_hardware_qcom_keymaster" remote="github" revision="n7x" />
+<project path="hardware/broadcom/wlan" name="lineageos/android_hardware_broadcom_wlan" remote="github" revision="cm-14.1" />
 
 </manifest>
 
