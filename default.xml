@@ -516,7 +516,6 @@
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="SimpleAosp" revision="N1" />
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="SAOSP-Legacy" revision="N1" />
   <project path="vendor/asus" name="platform_vendor_asus" remote="SAOSP-Legacy" revision="N1" />
-  <project path="vendor" name="platform_vendor" remote="SAOSP-Legacy" revision="N1" />
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="SimpleAosp" revision="N1" />
   <project path="vendor/htc" name="platform_vendor_htc" remote="SimpleAosp" revision="N1" />
 
