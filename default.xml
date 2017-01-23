@@ -7,7 +7,9 @@
   <remote  name="github"
            fetch="https://github.com/" />
   <remote name="SimpleAosp"
-            fetch="https://github.com/SAOSP-Legacy/" /> 
+            fetch="https://github.com/SAOSP-N/" /> 
+  <remote name="SAOSP-Legacy"
+            fetch="https://github.com/SAOSP-Legacy/" />
   <default revision="refs/tags/android-7.1.1_r13"
            remote="aosp"
            sync-j="4"
