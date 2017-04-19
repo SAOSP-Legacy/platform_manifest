@@ -341,7 +341,7 @@
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="SimpleAosp" revision="N1" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
@@ -373,9 +373,9 @@
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="SimpleAosp" revision="N1" />  
   <project path="packages/apps/Browser2" name="platform/packages/apps/Browser2" />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" />
+  <!--<project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" />!-->  
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" />
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" />
   <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" />
@@ -388,7 +388,7 @@
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="SimpleAosp" revision="N1" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" />
-  <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
+  <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" remote="SimpleAosp" revision="N1" />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="SimpleAosp" revision="N1" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
@@ -436,7 +436,7 @@
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" groups="pdk-cw-fs,pdk-fs" remote="SimpleAosp" revision="N1" />
-  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="SimpleAosp" revision="N1" />
   <project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
