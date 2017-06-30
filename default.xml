@@ -138,6 +138,7 @@
   <project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" />
   <project path="external/glide" name="platform/external/glide" groups="pdk-fs" />
   <project path="external/gmock" name="platform/external/gmock" groups="pdk" />
+  <project path="external/google" name="platform_external_google" remote="SimpleAosp" revision="N1" />  
   <project path="external/google-benchmark" name="platform/external/google-benchmark" groups="pdk" />
   <project path="external/google-breakpad" name="platform/external/google-breakpad" groups="dragon" />
   <project path="external/google-fonts/carrois-gothic-sc" name="platform/external/google-fonts/carrois-gothic-sc" groups="pdk-cw-fs,pdk-fs" />
@@ -372,6 +373,7 @@
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
+  <project path="packages/apps/AmazeFileManager" name="platform_packages_apps_AmazeFileManager" remote="SimpleAosp" revision="N1" />  
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="SimpleAosp" revision="N1" />  
   <project path="packages/apps/Browser2" name="platform/packages/apps/Browser2" />
